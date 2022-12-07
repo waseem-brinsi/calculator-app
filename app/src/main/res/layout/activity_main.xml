@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <!-- layout group Vertical for all element-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/displayScreen"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:text=""
+            android:maxLength="20"
+
+            android:background="@color/gray"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <!-- layout group Vertical for Alldigit Button-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            tools:layout_editor_absoluteX="1dp"
+            tools:layout_editor_absoluteY="354dp">
+            <!-- row 1 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                tools:layout_editor_absoluteX="1dp"
+                tools:layout_editor_absoluteY="301dp"
+                tools:ignore="ExtraText,MissingConstraints">
+
+                <Button
+                    android:onClick="onDigitClick"
+                    android:id="@+id/digit9"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="2dp"
+
+                    android:layout_weight="1"
+                    android:text="9"
+
+                    app:rippleColor="#E91E63"
+                     />
+                <Button
+                    android:onClick="onDigitClick"
+                    android:id="@+id/digit8"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:text="8" />
+
+                <Button
+                    android:onClick="onDigitClick"
+                    android:id="@+id/digit7"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:text="7" />
+
+                <Button
+                    android:onClick="onOperate"
+                    android:id="@+id/division"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:text="/" />
+
+            </LinearLayout>
+            <!-- row 2 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                tools:layout_editor_absoluteX="1dp"
+                tools:layout_editor_absoluteY="301dp"
+                tools:ignore="MissingConstraints">
+
+                <Button
+                    android:onClick="onDigitClick"
+                    android:id="@+id/digit6"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="2dp"
+
+                    android:layout_weight="1"
+                    android:text="6"
+                    app:rippleColor="#E91E63" />
+
+                <Button
+                    android:onClick="onDigitClick"
+                    android:id="@+id/digit5"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:text="5" />
+
+                <Button
+                    android:onClick="onDigitClick"
+                    android:id="@+id/digit4"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:text="4" />
+
+                <Button
+                    android:onClick="onOperate"
+                    android:id="@+id/multip"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:text="*" />
+
+            </LinearLayout>
+            <!-- row 3 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                tools:layout_editor_absoluteX="1dp"
+                tools:layout_editor_absoluteY="301dp"
+                tools:ignore="MissingConstraints">
+
+                <Button
+                    android:onClick="onDigitClick"
+                    android:id="@+id/digit3"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="2dp"
+
+                    android:layout_weight="1"
+                    android:text="3"
+                    app:rippleColor="#E91E63" />
+
+                <Button
+                    android:onClick="onDigitClick"
+                    android:id="@+id/digit2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:text="2" />
+
+                <Button
+                    android:onClick="onDigitClick"
+                    android:id="@+id/digit1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:text="1" />
+
+                <Button
+                    android:onClick="onOperate"
+                    android:id="@+id/minus"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:text="-" />
+
+            </LinearLayout>
+            <!-- row 4 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                tools:layout_editor_absoluteX="1dp"
+                tools:layout_editor_absoluteY="301dp"
+                tools:ignore="MissingConstraints">
+
+                <Button
+                    android:onClick="onDigitClick"
+                    android:id="@+id/digit0"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="2dp"
+
+                    android:layout_weight="1"
+                    android:text="0"
+                    app:rippleColor="#E91E63" />
+
+                <Button
+                    android:onClick="ondotclick"
+                    android:id="@+id/dot"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:text="."
+                    app:rippleColor="#E91E63" />
+
+                <Button
+                    android:onClick="onCLRclick"
+                    android:id="@+id/clr"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:text="CLR" />
+
+                <Button
+                    android:onClick="onOperate"
+                    android:id="@+id/plus"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:text="+" />
+
+            </LinearLayout>
+            <!-- row 5 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                tools:layout_editor_absoluteX="1dp"
+                tools:layout_editor_absoluteY="301dp"
+                tools:ignore="MissingConstraints">
+
+                <Button
+                    android:onClick="onClickEqual"
+                    android:id="@+id/equal"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="2dp"
+
+                    android:layout_weight="1"
+                    android:text="="
+                    app:rippleColor="#E91E63" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
